@@ -28,7 +28,7 @@ public class Yakuza extends Humain {
 	
 	public void gagnerDuel() {
 		this.reputation += 1;
-		this.parler("Ah ah victoire");
+		this.parler("Ah ah victoire !");
 	}
 	
 	public int perdreDuel() {
