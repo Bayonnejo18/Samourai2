@@ -37,4 +37,12 @@ public class Yakuza extends Humain {
 		this.parler("Oh non je viens de perdre mon buttin !");
 		return reputation;
 	}
+	
+	@Override
+	public void direBonjour() { //Redefinition
+		super.direBonjour();
+		this.parler("Je suis du prestigieux clan "+this.clan+" !");
+	}
+	
+	
 }

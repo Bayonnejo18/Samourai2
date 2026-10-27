@@ -16,11 +16,11 @@ public class Humain {
 	}
 	
 	public void direBonjour() {
-		this.parler("Bonjour ! Je m'appelle "+ this.nom + " et j'aime boire du "+ this.boisson);
+		this.parler("Bonjour ! Je m'appelle "+ nom + " et j'aime boire du "+ boisson);
 	}
 	
 	public void boire() {
-		this.parler("Mmmm, un bon verre de "+ this.boisson + " ! GLOUPS !");
+		this.parler("Mmmm, un bon verre de "+ boisson + " ! GLOUPS !");
 	}
 
 	public String getNom() {
