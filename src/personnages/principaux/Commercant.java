@@ -10,7 +10,8 @@ public class Commercant extends Humain {
 	}
 	
 	public int seFaireExtorquer() {
-		this.perdreArgent(0);
+		int tout = this.getArgent();
+		this.perdreArgent(tout);
 		this.parler("Le monde est vraiment trop injuste !");
 		return this.getArgent();
 	}
