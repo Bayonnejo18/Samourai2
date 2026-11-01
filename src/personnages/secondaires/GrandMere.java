@@ -7,8 +7,6 @@ import personnages.Humain;
 public class GrandMere extends Humain {
 	private Humain [] memoire = new Humain [30];
 	private static String boisson = "tisane";
-	private Random random = new Random();
-	private int nbConnaissances = 0;
 
 	public GrandMere(String nom, int argent) {
 		super(nom, argent, boisson);
@@ -16,6 +14,7 @@ public class GrandMere extends Humain {
 	}
 	
 	private String humainHasard() {
+		Random random = new Random();
 		int n = random.nextInt(4);
 		switch (n) {
 		case 0: return "Commerçant";
@@ -27,9 +26,10 @@ public class GrandMere extends Humain {
 	}
 	
 	public void faireConnaissanceAvec(Humain humain) {
-		if (nbConnaissances < 30) {
-			memoire[nbConnaissances] = humain;
-			nbConnaissances++;
+		int i = 0;
+		if (i < 30) {
+			memoire[i] = humain;
+			i++;
 		}
 		else {
 			this.parler("Oh ma mémoire de vieille dame ne me permet plus de retenir autant de personnes !");
@@ -37,7 +37,7 @@ public class GrandMere extends Humain {
 	}
 	
 	public void ragoter() {
-		for (int i= 0; i < nbConnaissances; i++) {
+		for (int i= 0; i < memoire.length; i++) {
 			Humain h = memoire[i];
 			
 			if (h instanceof Traitre) {
