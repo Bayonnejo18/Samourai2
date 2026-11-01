@@ -41,7 +41,7 @@ public class Yakuza extends Humain {
 	@Override
 	public void direBonjour() { //Redefinition
 		super.direBonjour();
-		this.parler("Je suis du prestigieux clan "+this.clan+" !");
+		this.parler("Je suis du prestigieux clan " + this.clan + " !");
 	}
 	
 	
