@@ -48,5 +48,10 @@ public class GrandMere extends Humain {
 			}
 		}
 	}
+	
+	//Petite permutation
+		int j = 22;
+		int x = 52;
+		int tmp = x;
 
 }

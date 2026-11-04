@@ -16,4 +16,9 @@ public class Samourai extends Ronin {
 	public void boire(String boisson) { //Surcharge
 		this.parler("Mmmm, un bon verre de "+ boisson + " ! GLOUPS !");
 	}
+	
+	//Petite permutation
+		int j = 22;
+		int x = 52;
+		int tmp = x;
 }
